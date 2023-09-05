@@ -1,0 +1,48 @@
+{
+  "ont": {
+    "network": {
+      "net_path": "/etc/mac.conf",
+      "dhcp": "/tmp/etc/udhcpd.leases",
+      "wan_name": "WAN",
+      "bridge_name": "br0"
+    },    
+    "ipset": {
+      "command": "/userfs/bin/ipset"
+    },
+    "agent": {
+      "reload": "sh /etc/safegate/safegate.sh reload"
+    },
+    "ssl": 0,
+    "max_cache_domain": 3600,
+    "tz_calibration": 25200,
+    "directs": {
+    	"configs": "/etc/safegate/conf",
+    	"database": "/etc/safegate/database",
+    	"tmp": "/tmp/SafeGate",
+    	"share_status_to_web": "/tmp/sg_stats"
+    }
+  },
+  "mesh": {
+    "network": {
+      "net_path": "/sys/class/net/",
+      "dhcp": "/tmp/dhcp.leases",
+      "wan_name": "eth0",
+      "bridge_name": "br-lan"
+    },
+    "ipset": {
+      "command": "ipset"
+    },
+    "agent": {
+      "reload": "/etc/init.d/sgagent restart"
+    },
+    "ssl": 0,
+    "max_cache_domain": 3600,
+    "tz_calibration": 0,
+    "directs": {
+    	"configs": "/etc/SafeGate/conf",
+    	"database": "/etc/SafeGate/database",
+    	"tmp": "/tmp/SafeGate",
+    	"share_status_to_web": "/tmp/sg_stats"
+    }
+  }
+}

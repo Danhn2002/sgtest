@@ -1,0 +1,28 @@
+{
+  "dns": {
+    "child": [
+      "115.146.121.109:53",
+      "115.146.121.109:53"
+    ],
+    "adult": [
+      "115.146.121.110:53",
+      "115.146.121.110:53"
+    ],
+    "deny": [
+      "8.8.8.8",
+      "8.8.4.4",
+      "1.1.1.1"
+    ]
+  },
+  "domains": [
+    "device.cloudsafegate.com",
+    "device.cloudsafegate.com",
+    "device.cloudsafegate.com",
+    "device.cloudsafegate.com"
+  ],
+  "mqtt": [
+    "mqtt.cloudsafegate.com",
+    "mqtt.cloudsafegate.com",
+    "mqtt.cloudsafegate.com"
+  ]
+}
